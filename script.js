@@ -62,6 +62,16 @@ d3.json("https://raw.githubusercontent.com/freeCodeCamp/ProjectReferenceData/mas
     tooltip.transition().duration(200).style("opacity", 0);
   });
 
+  // Add data to the table
+  const tableBody = d3.select("#data-table tbody");
+  data.forEach(d => {
+    const row = tableBody.append("tr");
+    row.append("td").text(d["Name"]);
+    row.append("td").text(d["Nationality"]);
+    row.append("td").text(d["Year"]);
+    row.append("td").text(d["Time"]);
+  });
+
   // Legend
   const legend = d3.select("#legend");
   legend.text("Légende: Points représentant les performances des cyclistes.");
