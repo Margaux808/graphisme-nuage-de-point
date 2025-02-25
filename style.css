@@ -28,3 +28,21 @@ body {
   display: block;
   margin: 0 auto;
 }
+
+/* Styles pour le tableau */
+#data-table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+#data-table th, #data-table td {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+#data-table th {
+  background-color: #f4f4f4;
+}
+
